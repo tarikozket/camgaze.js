@@ -6,8 +6,8 @@
         <script text="text/javascript" src="/camgaze.js/build/compatibility.js"></script>
         <script text="text/javascript" src="/camgaze.js/build/camgaze.js"></script>
         <script text="text/javascript" src="/camgaze.js/cascades/eye.js"></script>
-        <script text="text/javascript" src="http://cloud.github.com/downloads/harthur/brain/brain-0.6.0.js"></script>
-        <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+        <script text="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/brain/0.6.0/brain.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <style>
         	button {
         		top: 50%;
@@ -57,8 +57,8 @@
 				var width = document.width;
 
 				var cGaze = new camgaze.Camgaze(
-					width, 
-					height, 
+					width,
+					height,
 					"mainCanvas",
 					true
 				);
@@ -86,19 +86,19 @@
                 // points shown to the user for calibration
 				var calibrationPoints = [
 					new camgaze.structures.Point(
-						33, 
-						40 
-					),
-					new camgaze.structures.Point(
-						document.width - 50, 
+						33,
 						40
 					),
 					new camgaze.structures.Point(
-						33, 
+						document.width - 50,
+						40
+					),
+					new camgaze.structures.Point(
+						33,
 						document.height - 70
 					),
 					new camgaze.structures.Point(
-						document.width - 50, 
+						document.width - 50,
 						document.height - 70
 					)
 				];
@@ -286,4 +286,3 @@
 			}
 		</script>
 </html>
-
